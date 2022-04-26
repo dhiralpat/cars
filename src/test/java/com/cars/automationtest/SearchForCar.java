@@ -53,13 +53,13 @@ public class SearchForCar {
     //
     @Test
     public void carSearchTest() throws Exception  {
-        driver.get("https://www.cars.com/");
+        driver.get(baseUrl);
         Select sc = new Select(driver.findElement(By.name("stock_type")));
         sc.selectByIndex(3);
         Thread.sleep(2000);
         
         Select sc2 = new Select(driver.findElement(By.id("makes")));
-        sc2.selectByVisibleText("Lexus");
+        sc2.selectByVisibleText("Toyota");
         Thread.sleep(2000);
         
         Select sc3 = new Select(driver.findElement(By.id("models")));
