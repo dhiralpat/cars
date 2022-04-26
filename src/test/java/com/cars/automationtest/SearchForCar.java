@@ -59,7 +59,7 @@ public class SearchForCar {
         Thread.sleep(2000);
         
         Select sc2 = new Select(driver.findElement(By.id("makes")));
-        sc2.selectByVisibleText("Toyota");
+        sc2.selectByVisibleText("Lexus");
         Thread.sleep(2000);
         
         Select sc3 = new Select(driver.findElement(By.id("models")));
@@ -79,7 +79,7 @@ public class SearchForCar {
         Thread.sleep(2000);
         
         driver.findElement(By.xpath("//*[@id=\"by-make-tab\"]/div/div[7]/button")).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         
         
        // driver.findElement(By.id("881e9798-3ee2-4fbd-9ed0-8c28d080007a")).click();
