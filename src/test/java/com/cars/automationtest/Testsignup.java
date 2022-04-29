@@ -48,7 +48,7 @@ public class Testsignup {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void testsignup() throws InterruptedException {
+    public void testsignuppage() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.cars.com/");
