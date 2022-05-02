@@ -24,7 +24,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CarPartsTest {
     private WebDriver driver;
    
-    public carsTest() {
+    public CarPartsTest() {
     }
     
     @BeforeAll
