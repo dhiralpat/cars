@@ -57,6 +57,6 @@ public class carsTest {
         js.executeScript("window.scrollTo(0, 2000)");
         driver.findElement(By.xpath("//*[@id=\"ae-main-content\"]/div[2]/section[2]/div[1]/div/div[9]/ul/li[1]/a")).click();
         String response = driver.findElement(By.xpath("//*[@id=\"ae-main-content\"]/div[2]/section[1]/header/h1")).getText();
-        assertEquals ("Automatic Transmission",response );
+        assertEquals ("Automatic Transmission",response);
     }
 }
