@@ -44,8 +44,8 @@ public class carsTest {
     }
 
     @Test
-    public void testIndeedSearch() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\data\\chromedriver.exe");  //With this line you can change the browser we use instead of Chrome
+    public void testPartsSearch() throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver", "C:\\data\\chromedriver.exe");  
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //fluent wait
         driver.get("https://www.cars.com/");
