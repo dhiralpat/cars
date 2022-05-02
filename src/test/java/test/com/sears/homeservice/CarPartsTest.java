@@ -21,7 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  *
  * @author dpate
  */
-public class carsTest {
+public class CarPartsTest {
     private WebDriver driver;
    
     public carsTest() {
