@@ -55,13 +55,14 @@ public class Testsignup {
         //Thread.sleep(10000);
 
         driver.findElement(By.linkText("Sign Up")).click();
-        Thread.sleep(10000);
+        Thread.sleep(4000);
+        driver.manage().window().maximize();
         driver.findElement(By.id("user_first_name")).sendKeys("Falguni");
         driver.findElement(By.id("user_last_name")).sendKeys("Patel");
         driver.findElement(By.id("user_email")).sendKeys("falguniusa9516@gmail.com");
         driver.findElement(By.id("user_password")).sendKeys("Falguni@3101984");
         driver.findElement(By.id("user_confirm_password")).sendKeys("Falguni@3101984");
-        Thread.sleep(10000);
+        Thread.sleep(4000);
         driver.findElement(By.id("user_confirm_password")).sendKeys(Keys.ENTER);
 
         //  driver.findElement(By.cssSelector("sds-button")).click();
