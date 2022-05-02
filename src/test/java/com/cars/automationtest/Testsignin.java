@@ -51,10 +51,11 @@ public class Testsignin {
         System.setProperty("webdriver.chrome.driver", "C:\\data\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.cars.com/");
+        driver.manage().window().maximize();
         driver.findElement(By.linkText("Sign In")).click();
         driver.findElement(By.id("email")).sendKeys("falguniusa9516@gmail.com");
         driver.findElement(By.id("password")).sendKeys("Falguni@3101984");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         driver.findElement(By.id("password")).sendKeys(Keys.ENTER);
          
     }
