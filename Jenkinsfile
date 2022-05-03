@@ -1,13 +1,13 @@
 node {
 	stage ('SCM checkout'){
-		git "https://gitlab.com/mbabilo/experitest"
+		git "https://github.com/dhiralpat/cars.git"
 		}
 	stage ('Build'){
     	dir("comtest") {
 	   sh "mvn clean install"
        }
        	dir("comtest/target") {
-	   sh "java -jar com.test-1.0-SNAPSHOT.jar"
+	   sh "java -jar  cars.com 1.0-SNAPSHOT.jar"
        }
 		}
 }
