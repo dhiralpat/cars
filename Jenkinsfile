@@ -1,4 +1,5 @@
 node {
+	git credentialsId: 'carsgit', url: 'https://github.com/dhiralpat/cars.git'
 	stage ('SCM checkout'){
 		git "https://github.com/dhiralpat/cars.git"
 		}
