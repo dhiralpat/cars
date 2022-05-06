@@ -42,10 +42,7 @@ public class SearchForCar {
 
     @BeforeEach
     public void setUp() {
-         System.setProperty("webdriver.chrome.driver", "C:\\data\\chromedriver.exe");
-        driver = new ChromeDriver();
-        baseUrl = "https://www.cars.com/";
-        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+         
     }
 
     @AfterEach
@@ -57,6 +54,10 @@ public class SearchForCar {
     //
     @Test
     public void carSearchTest() throws Exception  {
+        System.setProperty("webdriver.chrome.driver", "C:\\data\\chromedriver.exe");
+        driver = new ChromeDriver();
+        baseUrl = "https://www.cars.com/";
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.get(baseUrl);
         Select sc = new Select(driver.findElement(By.name("stock_type")));
         sc.selectByIndex(3);
@@ -95,6 +96,10 @@ public class SearchForCar {
     }
     @Test
     public void researchAndReviewTest() throws InterruptedException{
+        System.setProperty("webdriver.chrome.driver", "C:\\data\\chromedriver.exe");
+        driver = new ChromeDriver();
+        baseUrl = "https://www.cars.com/";
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.get(baseUrl);
         driver.manage().window().maximize();
        
