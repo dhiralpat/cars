@@ -63,27 +63,27 @@ public class ResearchAndReviewTest {
         driver.findElement(By.xpath("//*[@id=\"mobile-menu-section\"]/ul[1]/li[2]/a")).click();
          JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 600)");
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         
          //driver.findElement(By.id("make-select")).click();
         Select sc = new Select(driver.findElement(By.id("make-select")));
         sc.selectByIndex(38);
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
        
         Select sc1 = new Select(driver.findElement(By.name("model")));
         sc1.selectByVisibleText("LX 570");
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 600)");
         Select sc2 = new Select(driver.findElement(By.name("year")));
         sc2.selectByIndex(3);
-        Thread.sleep(3000);
+        //Thread.sleep(3000);
         
         driver.findElement(By.xpath("//*[@id=\"by-search-tab\"]/div/div/div[4]/button")).click();
         JavascriptExecutor js2 = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 600)");
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
         
         driver.findElement(By.xpath("//*[@id=\"ae-main-content\"]/div[2]/div[2]/a")).click();
         
